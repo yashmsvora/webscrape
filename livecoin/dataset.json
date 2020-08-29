@@ -1,0 +1,110 @@
+[
+    {
+        "currency pair": "BTC/RUR",
+        "volume(24h)": "29.06 BTC"
+    },
+    {
+        "currency pair": "ETH/RUR",
+        "volume(24h)": "1.36 BTC"
+    },
+    {
+        "currency pair": "USD/RUR",
+        "volume(24h)": "0.11 BTC"
+    },
+    {
+        "currency pair": "DIME/RUR",
+        "volume(24h)": "0.08 BTC"
+    },
+    {
+        "currency pair": "XRP/RUR",
+        "volume(24h)": "0.03 BTC"
+    },
+    {
+        "currency pair": "PZM/RUR",
+        "volume(24h)": "0.01 BTC"
+    },
+    {
+        "currency pair": "EL/RUR",
+        "volume(24h)": "0.01 BTC"
+    },
+    {
+        "currency pair": "YOC/RUR",
+        "volume(24h)": "0.01 BTC"
+    },
+    {
+        "currency pair": "KICK/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "ITI/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "SIB/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "PIVX/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "THS/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "RLT/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "KRB/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "DGB/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "MNC/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "LKE/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "MSCN/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "BCH/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "HB/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "EMC/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "AMB/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "BIO/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "ITCM/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "PUT/RUR",
+        "volume(24h)": "0.00 BTC"
+    },
+    {
+        "currency pair": "ARC/RUR",
+        "volume(24h)": "0.00 BTC"
+    }
+]

@@ -1,0 +1,12 @@
+Content-Type: text/html;charset=UTF-8
+Server: Server
+Date: Sat, 29 Aug 2020 13:52:30 GMT
+X-Amz-Rid: WRDE1F1HM3DSJEYBGR6Y
+Content-Security-Policy: frame-ancestors 'self' imdb.com *.imdb.com *.media-imdb.com withoutabox.com *.withoutabox.com amazon.com *.amazon.com amazon.co.uk *.amazon.co.uk amazon.de *.amazon.de translate.google.com images.google.com www.google.com www.google.co.uk search.aol.com bing.com www.bing.com
+Content-Language: en
+Strict-Transport-Security: max-age=47474747; includeSubDomains; preload
+Vary: Content-Type,Accept-Encoding,X-Amzn-CDN-Cache,X-Amzn-AX-Treatment,User-Agent
+X-Cache: Miss from cloudfront
+Via: 1.1 bef39d77a2b440566326f82fc0af7d28.cloudfront.net (CloudFront)
+X-Amz-Cf-Pop: BOM51-C1
+X-Amz-Cf-Id: YxxEF4BG2vhnJxnsV8Cb78bReoWQ-0ZE234-1eZjbxPrSbkawqomsw==
