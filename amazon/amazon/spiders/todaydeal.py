@@ -5,7 +5,7 @@ from selenium.webdriver.common.keys import Keys
 
 class TodaydealSpider(scrapy.Spider):
     name = 'todaydeal'
-
+    i = 1
     def start_requests(self):
         yield SeleniumRequest(
             url='https://www.amazon.in/gp/goldbox/',
@@ -15,6 +15,16 @@ class TodaydealSpider(scrapy.Spider):
         )
 
     def parse(self, response):
+        
+        driver = response.meta['driver']
+        driver.implicitly_wait(3)
+
+        # img = response.meta['screenshot']
+
+        # with open(f'{str(self.i)}.png', 'wb') as f:
+        #     f.write(img)
+        #     self.i = self.i + 1
+        
         products = response.xpath("(//div[@id='widgetContent'])[2]/div")
         for product in products:
             sub = '//div/div[2]/div/div'
@@ -34,10 +44,22 @@ class TodaydealSpider(scrapy.Spider):
             prime_deal = False
             if(product.xpath(f".{sub}/div[2]/div/span[@class='a-size-mini a-color-base primeBadge podotdBadge']/span/text()")):
                 prime_deal = True
-            
-            yield {
-                'prod_name': prod_name,
-                'prod_price': product.xpath(f"(.{sub}/div[3]/div[@class='a-row priceBlock unitLineHeight']/span/text())").get(),
-                'prime_deal': prime_deal,
-                'prod_url': prod_url
-            }
+            if(prod_name!=""):
+                yield {
+                    'prod_name': prod_name,
+                    'prod_price': product.xpath(f"(.{sub}/div[3]/div[@class='a-row priceBlock unitLineHeight']/span/text())").get(),
+                    'prime_deal': prime_deal,
+                    'prod_url': prod_url
+                }
+
+        next_page = driver.find_element_by_xpath("//div[@class='a-text-center']/ul/li[@class='a-last']")
+    
+        if next_page:
+            next_page.click()
+
+        yield SeleniumRequest(
+            url=driver.current_url,
+            wait_time=3,
+            screenshot=True,
+            callback=self.parse
+        )
