@@ -44,11 +44,19 @@ class TodaydealSpider(scrapy.Spider):
             prime_deal = False
             if(product.xpath(f".{sub}/div[2]/div/span[@class='a-size-mini a-color-base primeBadge podotdBadge']/span/text()")):
                 prime_deal = True
+
+            prod_rating = product.xpath(".//i[contains(@class, 'a-icon a-icon-star ')]").get()
+            if(prod_rating!=None):
+                prod_rating = float(prod_rating.split("a-star-")[1].split('"><span')[0].replace("-","."))
+            else:
+                prod_rating=None
+            
             if(prod_name!=""):
                 yield {
                     'prod_name': prod_name,
                     'prod_price': product.xpath(f"(.{sub}/div[3]/div[@class='a-row priceBlock unitLineHeight']/span/text())").get(),
                     'prime_deal': prime_deal,
+                    'prod_rating': prod_rating,
                     'prod_url': prod_url
                 }
 
